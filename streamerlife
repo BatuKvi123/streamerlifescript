@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
 ]=]
 
--- Instances: 34 | Scripts: 8 | Modules: 0
+-- Instances: 50 | Scripts: 13 | Modules: 0
 local G2L = {};
 
 -- StarterGui.SLS
@@ -45,7 +45,7 @@ G2L["4"]["Size"] = UDim2.new(0, 116, 0, 290);
 G2L["4"]["Position"] = UDim2.new(0.010178117081522942, 0, 0.1027190312743187, 0);
 G2L["4"]["Name"] = [[Buttons]];
 
--- StarterGui.SLS.Main.Buttons.UTB
+-- StarterGui.SLS.Main.Buttons.StatsButton
 G2L["5"] = Instance.new("TextButton", G2L["4"]);
 G2L["5"]["TextWrapped"] = true;
 G2L["5"]["BorderSizePixel"] = 0;
@@ -55,15 +55,15 @@ G2L["5"]["TextSize"] = 14;
 G2L["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["5"]["Size"] = UDim2.new(0, 96, 0, 41);
-G2L["5"]["Name"] = [[UTB]];
+G2L["5"]["Name"] = [[StatsButton]];
 G2L["5"]["Text"] = [[Stats]];
 G2L["5"]["Position"] = UDim2.new(0.06883976608514786, 0, 0.061049625277519226, 0);
 
--- StarterGui.SLS.Main.Buttons.UTB.LocalScript
+-- StarterGui.SLS.Main.Buttons.StatsButton.LocalScript
 G2L["6"] = Instance.new("LocalScript", G2L["5"]);
 
 
--- StarterGui.SLS.Main.Buttons.UTB.UICorner
+-- StarterGui.SLS.Main.Buttons.StatsButton.UICorner
 G2L["7"] = Instance.new("UICorner", G2L["5"]);
 
 
@@ -79,7 +79,7 @@ G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["8"]["Size"] = UDim2.new(0, 96, 0, 41);
 G2L["8"]["Name"] = [[TeleportsButton]];
 G2L["8"]["Text"] = [[Teleports]];
-G2L["8"]["Position"] = UDim2.new(0.06883976608514786, 0, 0.2748427391052246, 0);
+G2L["8"]["Position"] = UDim2.new(0.06883976608514786, 0, 0.2507047951221466, 0);
 
 -- StarterGui.SLS.Main.Buttons.TeleportsButton.LocalScript
 G2L["9"] = Instance.new("LocalScript", G2L["8"]);
@@ -89,131 +89,129 @@ G2L["9"] = Instance.new("LocalScript", G2L["8"]);
 G2L["a"] = Instance.new("UICorner", G2L["8"]);
 
 
--- StarterGui.SLS.Main.UTF
-G2L["b"] = Instance.new("Frame", G2L["2"]);
+-- StarterGui.SLS.Main.Buttons.UsefulThingsButton
+G2L["b"] = Instance.new("TextButton", G2L["4"]);
+G2L["b"]["TextWrapped"] = true;
 G2L["b"]["BorderSizePixel"] = 0;
-G2L["b"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
-G2L["b"]["Size"] = UDim2.new(0, 243, 0, 269);
-G2L["b"]["Position"] = UDim2.new(0.34860050678253174, 0, 0.15407854318618774, 0);
-G2L["b"]["Visible"] = false;
-G2L["b"]["Name"] = [[UTF]];
+G2L["b"]["TextScaled"] = true;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0, 96, 0, 41);
+G2L["b"]["Name"] = [[UsefulThingsButton]];
+G2L["b"]["Text"] = [[Useful Things]];
+G2L["b"]["Position"] = UDim2.new(0.06883976608514786, 0, 0.44036000967025757, 0);
+
+-- StarterGui.SLS.Main.Buttons.UsefulThingsButton.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+
+
+-- StarterGui.SLS.Main.Buttons.UsefulThingsButton.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["b"]);
+
+
+-- StarterGui.SLS.Main.UTF
+G2L["e"] = Instance.new("Frame", G2L["2"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
+G2L["e"]["Size"] = UDim2.new(0, 243, 0, 269);
+G2L["e"]["Position"] = UDim2.new(0.34860050678253174, 0, 0.15407854318618774, 0);
+G2L["e"]["Visible"] = false;
+G2L["e"]["Name"] = [[UTF]];
 
 -- StarterGui.SLS.Main.UTF.CashSet
-G2L["c"] = Instance.new("TextButton", G2L["b"]);
-G2L["c"]["TextWrapped"] = true;
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["TextScaled"] = true;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["c"]["TextSize"] = 14;
-G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["c"]["Size"] = UDim2.new(0, 96, 0, 35);
-G2L["c"]["Name"] = [[CashSet]];
-G2L["c"]["Text"] = [[Set Cash]];
-G2L["c"]["Position"] = UDim2.new(0.5626670122146606, 0, 0.023874899372458458, 0);
+G2L["f"] = Instance.new("TextButton", G2L["e"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["f"]["Size"] = UDim2.new(0, 96, 0, 35);
+G2L["f"]["Name"] = [[CashSet]];
+G2L["f"]["Text"] = [[Set Cash]];
+G2L["f"]["Position"] = UDim2.new(0.5626670122146606, 0, 0.023874899372458458, 0);
 
 -- StarterGui.SLS.Main.UTF.CashSet.LocalScript
-G2L["d"] = Instance.new("LocalScript", G2L["c"]);
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
 
 
 -- StarterGui.SLS.Main.UTF.CashSet.UICorner
-G2L["e"] = Instance.new("UICorner", G2L["c"]);
+G2L["11"] = Instance.new("UICorner", G2L["f"]);
 
 
 -- StarterGui.SLS.Main.UTF.CashBox
-G2L["f"] = Instance.new("TextBox", G2L["b"]);
-G2L["f"]["CursorPosition"] = -1;
-G2L["f"]["TextSize"] = 14;
-G2L["f"]["TextWrapped"] = true;
-G2L["f"]["TextScaled"] = true;
-G2L["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["f"]["PlaceholderText"] = [[Cash Here...]];
-G2L["f"]["Size"] = UDim2.new(0, 117, 0, 25);
-G2L["f"]["Text"] = [[]];
-G2L["f"]["Position"] = UDim2.new(0.04886831343173981, 0, 0.03218787908554077, 0);
-G2L["f"]["Name"] = [[CashBox]];
-G2L["f"]["ClearTextOnFocus"] = false;
+G2L["12"] = Instance.new("TextBox", G2L["e"]);
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextWrapped"] = true;
+G2L["12"]["TextScaled"] = true;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["PlaceholderText"] = [[Cash Here...]];
+G2L["12"]["Size"] = UDim2.new(0, 117, 0, 25);
+G2L["12"]["Text"] = [[]];
+G2L["12"]["Position"] = UDim2.new(0.04886831343173981, 0, 0.03218787908554077, 0);
+G2L["12"]["Name"] = [[CashBox]];
+G2L["12"]["ClearTextOnFocus"] = false;
 
 -- StarterGui.SLS.Main.UTF.CashBox.UICorner
-G2L["10"] = Instance.new("UICorner", G2L["f"]);
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
 
 
 -- StarterGui.SLS.Main.UTF.CashBox.UIStroke
-G2L["11"] = Instance.new("UIStroke", G2L["f"]);
-G2L["11"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["14"] = Instance.new("UIStroke", G2L["12"]);
+G2L["14"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 -- StarterGui.SLS.Main.UTF.FollowersSet
-G2L["12"] = Instance.new("TextButton", G2L["b"]);
-G2L["12"]["TextWrapped"] = true;
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["TextScaled"] = true;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["12"]["TextSize"] = 14;
-G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["Size"] = UDim2.new(0, 96, 0, 41);
-G2L["12"]["Name"] = [[FollowersSet]];
-G2L["12"]["Text"] = [[Set Followers]];
-G2L["12"]["Position"] = UDim2.new(0.5626669526100159, 0, 0.1837262213230133, 0);
+G2L["15"] = Instance.new("TextButton", G2L["e"]);
+G2L["15"]["TextWrapped"] = true;
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextScaled"] = true;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Size"] = UDim2.new(0, 96, 0, 41);
+G2L["15"]["Name"] = [[FollowersSet]];
+G2L["15"]["Text"] = [[Set Followers]];
+G2L["15"]["Position"] = UDim2.new(0.5626669526100159, 0, 0.1837262213230133, 0);
 
 -- StarterGui.SLS.Main.UTF.FollowersSet.LocalScript
-G2L["13"] = Instance.new("LocalScript", G2L["12"]);
+G2L["16"] = Instance.new("LocalScript", G2L["15"]);
 
 
 -- StarterGui.SLS.Main.UTF.FollowersSet.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["12"]);
+G2L["17"] = Instance.new("UICorner", G2L["15"]);
 
 
 -- StarterGui.SLS.Main.UTF.FollowersBox
-G2L["15"] = Instance.new("TextBox", G2L["b"]);
-G2L["15"]["CursorPosition"] = -1;
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["TextWrapped"] = true;
-G2L["15"]["TextScaled"] = true;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["15"]["PlaceholderText"] = [[Followers Here...]];
-G2L["15"]["Size"] = UDim2.new(0, 117, 0, 25);
-G2L["15"]["Text"] = [[]];
-G2L["15"]["Position"] = UDim2.new(0.04886831343173981, 0, 0.2106265425682068, 0);
-G2L["15"]["Name"] = [[FollowersBox]];
-G2L["15"]["ClearTextOnFocus"] = false;
+G2L["18"] = Instance.new("TextBox", G2L["e"]);
+G2L["18"]["TextSize"] = 14;
+G2L["18"]["TextWrapped"] = true;
+G2L["18"]["TextScaled"] = true;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18"]["PlaceholderText"] = [[Followers Here...]];
+G2L["18"]["Size"] = UDim2.new(0, 117, 0, 25);
+G2L["18"]["Text"] = [[]];
+G2L["18"]["Position"] = UDim2.new(0.04886831343173981, 0, 0.2106265425682068, 0);
+G2L["18"]["Name"] = [[FollowersBox]];
+G2L["18"]["ClearTextOnFocus"] = false;
 
 -- StarterGui.SLS.Main.UTF.FollowersBox.UICorner
-G2L["16"] = Instance.new("UICorner", G2L["15"]);
+G2L["19"] = Instance.new("UICorner", G2L["18"]);
 
 
 -- StarterGui.SLS.Main.UTF.FollowersBox.UIStroke
-G2L["17"] = Instance.new("UIStroke", G2L["15"]);
-G2L["17"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1a"] = Instance.new("UIStroke", G2L["18"]);
+G2L["1a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 -- StarterGui.SLS.Main.UTF.MakeMoneyInf
-G2L["18"] = Instance.new("TextButton", G2L["b"]);
-G2L["18"]["TextWrapped"] = true;
-G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["TextScaled"] = true;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["18"]["TextSize"] = 14;
-G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["Size"] = UDim2.new(0, 96, 0, 41);
-G2L["18"]["Name"] = [[MakeMoneyInf]];
-G2L["18"]["Text"] = [[Make money inf]];
-G2L["18"]["Position"] = UDim2.new(0.08530071377754211, 0, 0.34729501605033875, 0);
-
--- StarterGui.SLS.Main.UTF.MakeMoneyInf.LocalScript
-G2L["19"] = Instance.new("LocalScript", G2L["18"]);
-
-
--- StarterGui.SLS.Main.UTF.MakeMoneyInf.UICorner
-G2L["1a"] = Instance.new("UICorner", G2L["18"]);
-
-
--- StarterGui.SLS.Main.UTF.MakeFollowersInf
-G2L["1b"] = Instance.new("TextButton", G2L["b"]);
+G2L["1b"] = Instance.new("TextButton", G2L["e"]);
 G2L["1b"]["TextWrapped"] = true;
 G2L["1b"]["BorderSizePixel"] = 0;
 G2L["1b"]["TextScaled"] = true;
@@ -222,59 +220,179 @@ G2L["1b"]["TextSize"] = 14;
 G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1b"]["Size"] = UDim2.new(0, 96, 0, 41);
-G2L["1b"]["Name"] = [[MakeFollowersInf]];
-G2L["1b"]["Text"] = [[Make followers inf]];
-G2L["1b"]["Position"] = UDim2.new(0.5626669526100159, 0, 0.34729498624801636, 0);
+G2L["1b"]["Name"] = [[MakeMoneyInf]];
+G2L["1b"]["Text"] = [[Make money inf]];
+G2L["1b"]["Position"] = UDim2.new(0.08530071377754211, 0, 0.34729501605033875, 0);
 
--- StarterGui.SLS.Main.UTF.MakeFollowersInf.LocalScript
+-- StarterGui.SLS.Main.UTF.MakeMoneyInf.LocalScript
 G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
 
 
--- StarterGui.SLS.Main.UTF.MakeFollowersInf.UICorner
+-- StarterGui.SLS.Main.UTF.MakeMoneyInf.UICorner
 G2L["1d"] = Instance.new("UICorner", G2L["1b"]);
 
 
+-- StarterGui.SLS.Main.UTF.MakeFollowersInf
+G2L["1e"] = Instance.new("TextButton", G2L["e"]);
+G2L["1e"]["TextWrapped"] = true;
+G2L["1e"]["BorderSizePixel"] = 0;
+G2L["1e"]["TextScaled"] = true;
+G2L["1e"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["1e"]["TextSize"] = 14;
+G2L["1e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1e"]["Size"] = UDim2.new(0, 96, 0, 41);
+G2L["1e"]["Name"] = [[MakeFollowersInf]];
+G2L["1e"]["Text"] = [[Make followers inf]];
+G2L["1e"]["Position"] = UDim2.new(0.5626669526100159, 0, 0.34729498624801636, 0);
+
+-- StarterGui.SLS.Main.UTF.MakeFollowersInf.LocalScript
+G2L["1f"] = Instance.new("LocalScript", G2L["1e"]);
+
+
+-- StarterGui.SLS.Main.UTF.MakeFollowersInf.UICorner
+G2L["20"] = Instance.new("UICorner", G2L["1e"]);
+
+
+-- StarterGui.SLS.Main.UTF.getmoney
+G2L["21"] = Instance.new("TextButton", G2L["e"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["21"]["TextSize"] = 14;
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["Size"] = UDim2.new(0, 96, 0, 41);
+G2L["21"]["Name"] = [[getmoney]];
+G2L["21"]["Text"] = [[Get money every second(cant get stopped)]];
+G2L["21"]["Position"] = UDim2.new(0.07295503467321396, 0, 0.5666258931159973, 0);
+
+-- StarterGui.SLS.Main.UTF.getmoney.LocalScript
+G2L["22"] = Instance.new("LocalScript", G2L["21"]);
+
+
+-- StarterGui.SLS.Main.UTF.getmoney.UICorner
+G2L["23"] = Instance.new("UICorner", G2L["21"]);
+
+
+-- StarterGui.SLS.Main.UTF.getfollowers
+G2L["24"] = Instance.new("TextButton", G2L["e"]);
+G2L["24"]["TextWrapped"] = true;
+G2L["24"]["BorderSizePixel"] = 0;
+G2L["24"]["TextScaled"] = true;
+G2L["24"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["24"]["TextSize"] = 14;
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["24"]["Size"] = UDim2.new(0, 96, 0, 41);
+G2L["24"]["Name"] = [[getfollowers]];
+G2L["24"]["Text"] = [[Get followers every second(cant get stopped)]];
+G2L["24"]["Position"] = UDim2.new(0.5297451615333557, 0, 0.5666258931159973, 0);
+
+-- StarterGui.SLS.Main.UTF.getfollowers.LocalScript
+G2L["25"] = Instance.new("LocalScript", G2L["24"]);
+
+
+-- StarterGui.SLS.Main.UTF.getfollowers.UICorner
+G2L["26"] = Instance.new("UICorner", G2L["24"]);
+
+
 -- StarterGui.SLS.Main.LocalScript
-G2L["1e"] = Instance.new("LocalScript", G2L["2"]);
+G2L["27"] = Instance.new("LocalScript", G2L["2"]);
 
 
 -- StarterGui.SLS.Main.TeleportsFrame
-G2L["1f"] = Instance.new("Frame", G2L["2"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
-G2L["1f"]["Size"] = UDim2.new(0, 243, 0, 269);
-G2L["1f"]["Position"] = UDim2.new(0.3562341034412384, 0, 0.15407854318618774, 0);
-G2L["1f"]["Visible"] = false;
-G2L["1f"]["Name"] = [[TeleportsFrame]];
+G2L["28"] = Instance.new("Frame", G2L["2"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
+G2L["28"]["Size"] = UDim2.new(0, 243, 0, 269);
+G2L["28"]["Position"] = UDim2.new(0.3562341034412384, 0, 0.15407854318618774, 0);
+G2L["28"]["Visible"] = false;
+G2L["28"]["Name"] = [[TeleportsFrame]];
 
 -- StarterGui.SLS.Main.TeleportsFrame.TeleportsButton
-G2L["20"] = Instance.new("TextButton", G2L["1f"]);
-G2L["20"]["TextWrapped"] = true;
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["TextScaled"] = true;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
-G2L["20"]["TextSize"] = 14;
-G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["20"]["Size"] = UDim2.new(0, 226, 0, 22);
-G2L["20"]["Name"] = [[TeleportsButton]];
-G2L["20"]["Text"] = [[Go To House]];
-G2L["20"]["Position"] = UDim2.new(0.03180283308029175, 0, 0.0257720947265625, 0);
+G2L["29"] = Instance.new("TextButton", G2L["28"]);
+G2L["29"]["TextWrapped"] = true;
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["TextScaled"] = true;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["29"]["TextSize"] = 14;
+G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["Size"] = UDim2.new(0, 226, 0, 22);
+G2L["29"]["Name"] = [[TeleportsButton]];
+G2L["29"]["Text"] = [[Go To House]];
+G2L["29"]["Position"] = UDim2.new(0.03180283308029175, 0, 0.0257720947265625, 0);
 
 -- StarterGui.SLS.Main.TeleportsFrame.TeleportsButton.LocalScript
-G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+G2L["2a"] = Instance.new("LocalScript", G2L["29"]);
 
 
 -- StarterGui.SLS.Main.TeleportsFrame.TeleportsButton.UICorner
-G2L["22"] = Instance.new("UICorner", G2L["20"]);
+G2L["2b"] = Instance.new("UICorner", G2L["29"]);
 
 
--- StarterGui.SLS.Main.Buttons.UTB.LocalScript
+-- StarterGui.SLS.Main.UsefulThingsFrame
+G2L["2c"] = Instance.new("Frame", G2L["2"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(75, 75, 75);
+G2L["2c"]["Size"] = UDim2.new(0, 243, 0, 269);
+G2L["2c"]["Position"] = UDim2.new(0.34860050678253174, 0, 0.15407854318618774, 0);
+G2L["2c"]["Visible"] = false;
+G2L["2c"]["Name"] = [[UsefulThingsFrame]];
+
+-- StarterGui.SLS.Main.UsefulThingsFrame.OpenPC
+G2L["2d"] = Instance.new("TextButton", G2L["2c"]);
+G2L["2d"]["TextWrapped"] = true;
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextScaled"] = true;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["Size"] = UDim2.new(0, 96, 0, 35);
+G2L["2d"]["Name"] = [[OpenPC]];
+G2L["2d"]["Text"] = [[Open PC]];
+G2L["2d"]["Position"] = UDim2.new(0.07295507192611694, 0, 0.075919508934021, 0);
+
+-- StarterGui.SLS.Main.UsefulThingsFrame.OpenPC.LocalScript
+G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
+
+
+-- StarterGui.SLS.Main.UsefulThingsFrame.OpenPC.UICorner
+G2L["2f"] = Instance.new("UICorner", G2L["2d"]);
+
+
+-- StarterGui.SLS.Main.UsefulThingsFrame.ClosePC
+G2L["30"] = Instance.new("TextButton", G2L["2c"]);
+G2L["30"]["TextWrapped"] = true;
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["TextScaled"] = true;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(37, 37, 37);
+G2L["30"]["TextSize"] = 14;
+G2L["30"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["Size"] = UDim2.new(0, 96, 0, 35);
+G2L["30"]["Name"] = [[ClosePC]];
+G2L["30"]["Text"] = [[Close PC]];
+G2L["30"]["Position"] = UDim2.new(0.5503213405609131, 0, 0.075919508934021, 0);
+
+-- StarterGui.SLS.Main.UsefulThingsFrame.ClosePC.LocalScript
+G2L["31"] = Instance.new("LocalScript", G2L["30"]);
+
+
+-- StarterGui.SLS.Main.UsefulThingsFrame.ClosePC.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["30"]);
+
+
+-- StarterGui.SLS.Main.Buttons.StatsButton.LocalScript
 local function C_6()
 local script = G2L["6"];
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.UTF.Visible = true
 		script.Parent.Parent.Parent.TeleportsFrame.Visible = false
+		script.Parent.Parent.Parent.UsefulThingsFrame.Visible = false
 	end)
 end;
 task.spawn(C_6);
@@ -284,52 +402,89 @@ local script = G2L["9"];
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent.UTF.Visible = false
 		script.Parent.Parent.Parent.TeleportsFrame.Visible = true
+		script.Parent.Parent.Parent.UsefulThingsFrame.Visible = false
 	end)
 end;
 task.spawn(C_9);
+-- StarterGui.SLS.Main.Buttons.UsefulThingsButton.LocalScript
+local function C_c()
+local script = G2L["c"];
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent.UTF.Visible = false
+		script.Parent.Parent.Parent.TeleportsFrame.Visible = false
+		script.Parent.Parent.Parent.UsefulThingsFrame.Visible = true
+	end)
+end;
+task.spawn(C_c);
 -- StarterGui.SLS.Main.UTF.CashSet.LocalScript
-local function C_d()
-local script = G2L["d"];
+local function C_10()
+local script = G2L["10"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Cash.Value = tonumber(script.Parent.Parent.CashBox.Text)
+		game.Players.LocalPlayer.leaderstats.Cash = tonumber(script.Parent.Parent.CashBox.Text)
 	end)
 end;
-task.spawn(C_d);
+task.spawn(C_10);
 -- StarterGui.SLS.Main.UTF.FollowersSet.LocalScript
-local function C_13()
-local script = G2L["13"];
+local function C_16()
+local script = G2L["16"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Followers.Value = tonumber(script.Parent.Parent.FollowersBox.Text)
+		game.Players.LocalPlayer.leaderstats.Followers = tonumber(script.Parent.Parent.FollowersBox.Text)
 	end)
 end;
-task.spawn(C_13);
+task.spawn(C_16);
 -- StarterGui.SLS.Main.UTF.MakeMoneyInf.LocalScript
-local function C_19()
-local script = G2L["19"];
-	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Cash.Value = 900000000000000000000
-	end)
-end;
-task.spawn(C_19);
--- StarterGui.SLS.Main.UTF.MakeFollowersInf.LocalScript
 local function C_1c()
 local script = G2L["1c"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Followers.Value = 900000000000000000000
+		game.Players.LocalPlayer.leaderstats.Cash = 900000000000000000000
 	end)
 end;
 task.spawn(C_1c);
+-- StarterGui.SLS.Main.UTF.MakeFollowersInf.LocalScript
+local function C_1f()
+local script = G2L["1f"];
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.leaderstats.Followers = 900000000000000000000
+	end)
+end;
+task.spawn(C_1f);
+-- StarterGui.SLS.Main.UTF.getmoney.LocalScript
+local function C_22()
+local script = G2L["22"];
+	script.Parent.MouseButton1Down:Connect(function()
+		
+		local cash = game.Players.LocalPlayer.leaderstats.Cash
+		while true  do
+			wait(0.01)
+			cash.Value = cash.Value + 1
+		end
+	end)
+end;
+task.spawn(C_22);
+-- StarterGui.SLS.Main.UTF.getfollowers.LocalScript
+local function C_25()
+local script = G2L["25"];
+	script.Parent.MouseButton1Down:Connect(function()
+		
+		local followers = game.Players.LocalPlayer.leaderstats.Followers
+		while true  do
+			wait(0.01)
+			followers.Value = followers.Value + 1
+		end
+	end)
+end;
+task.spawn(C_25);
 -- StarterGui.SLS.Main.LocalScript
-local function C_1e()
-local script = G2L["1e"];
+local function C_27()
+local script = G2L["27"];
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 	script.Parent.Selectable = true
 end;
-task.spawn(C_1e);
+task.spawn(C_27);
 -- StarterGui.SLS.Main.TeleportsFrame.TeleportsButton.LocalScript
-local function C_21()
-local script = G2L["21"];
+local function C_2a()
+local script = G2L["2a"];
 	script.Parent.MouseButton1Down:Connect(function()
 		local players = game.Players
 		local lp = players.LocalPlayer
@@ -341,6 +496,22 @@ local script = G2L["21"];
 		
 	end)
 end;
-task.spawn(C_21);
+task.spawn(C_2a);
+-- StarterGui.SLS.Main.UsefulThingsFrame.OpenPC.LocalScript
+local function C_2e()
+local script = G2L["2e"];
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.PC.Enabled = true
+	end)
+end;
+task.spawn(C_2e);
+-- StarterGui.SLS.Main.UsefulThingsFrame.ClosePC.LocalScript
+local function C_31()
+local script = G2L["31"];
+	script.Parent.MouseButton1Down:Connect(function()
+		game.Players.LocalPlayer.PlayerGui.PC.Enabled = true
+	end)
+end;
+task.spawn(C_31);
 
 return G2L["1"], require;
