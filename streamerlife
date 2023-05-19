@@ -291,7 +291,7 @@ task.spawn(C_9);
 local function C_d()
 local script = G2L["d"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Cash = tonumber(script.Parent.Parent.CashBox.Text)
+		game.Players.LocalPlayer.leaderstats.Cash.Value = tonumber(script.Parent.Parent.CashBox.Text)
 	end)
 end;
 task.spawn(C_d);
@@ -299,7 +299,7 @@ task.spawn(C_d);
 local function C_13()
 local script = G2L["13"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Followers = tonumber(script.Parent.Parent.FollowersBox.Text)
+		game.Players.LocalPlayer.leaderstats.Followers.Value = tonumber(script.Parent.Parent.FollowersBox.Text)
 	end)
 end;
 task.spawn(C_13);
@@ -307,7 +307,7 @@ task.spawn(C_13);
 local function C_19()
 local script = G2L["19"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Cash = 900000000000000000000
+		game.Players.LocalPlayer.leaderstats.Cash.Value = 900000000000000000000
 	end)
 end;
 task.spawn(C_19);
@@ -315,7 +315,7 @@ task.spawn(C_19);
 local function C_1c()
 local script = G2L["1c"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.leaderstats.Followers = 900000000000000000000
+		game.Players.LocalPlayer.leaderstats.Followers.Value = 900000000000000000000
 	end)
 end;
 task.spawn(C_1c);
