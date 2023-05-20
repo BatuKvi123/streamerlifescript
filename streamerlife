@@ -509,7 +509,7 @@ task.spawn(C_2e);
 local function C_31()
 local script = G2L["31"];
 	script.Parent.MouseButton1Down:Connect(function()
-		game.Players.LocalPlayer.PlayerGui.PC.Enabled = true
+		game.Players.LocalPlayer.PlayerGui.PC.Enabled = false
 	end)
 end;
 task.spawn(C_31);
